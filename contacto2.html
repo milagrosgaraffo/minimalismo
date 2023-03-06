@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<body lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+<header>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artistas.html">Artistas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="historia.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="obras.html">Obras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Cuenta</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="register.html">Registro</a></li>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form action="buscador.php" method="post">
+          <input type="search" class="form-control" placeholder="Buscar" name="busqueda">
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body id="login">
+    <div class="container w-75 mt-6 rounded shadow">
+      <div class="row align-items-stretch">
+        <div class="col p-5 rounded-end">
+          <h2 class="fw-bold text-center py-3">Deja tu comentario</h2>
+          <h2 class="text-center py-3">Tu comentario fue registrado con éxito!</h2>
+          <form class="row g-3" method="post" action="formulario.php">
+            <div class="col-md-12">
+              <label for="firstname" class="form-label">Nombre</label>
+              <input type="text" class="form-control" name="nombre" required>
+            </div>
+            <div class="col-md-12">
+              <label for="lastname" class="form-label">Apellido</label>
+              <input type="text" class="form-control" name="apellido" required>
+            </div>
+            <div class="col-md-12">
+              <label for="emailInfo" class="form-label">E-mail</label>
+              <input type="mail" class="form-control" name="mail" required>
+            </div>
+            <div class="col-md-12">
+              <label for="phonenumber" class="form-label">Celular</label>
+              <input type="number" class="form-control" name="celular" placeholder="1165986578" required>
+            </div>
+            <div class="col-md-12">
+              <label for="comments" class="form-label">Comentarios</label>
+              <textarea class="form-control" name="comentarios" rows="2" required></textarea>
+            </div>
+            <div class="col-md-12">
+              <input type="submit" class="btn btn-dark"></input>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">&copy; 2022 Milagros Garaffo</p>
+  </div>
+  </body>
+  </html>
